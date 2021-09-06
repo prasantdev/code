@@ -6,7 +6,7 @@ const router = express.Router();
 
 router.get('/',  (req, res) => {
     // res.sendFile(path.join(__dirname,'../templates/index.html'));
-    res.render('../home');
+    res.render('home.handlebars');
 })
 router.get('/blogs',  (req, res) => {
     // blogs.forEach(e => {
