@@ -9,6 +9,8 @@ const port = process.env.PORT || 3000;
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
 
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(express.static(path.join(__dirname, 'static')));
 app.use('/', require(path.join(__dirname,'routes/blog')))
 
